@@ -143,6 +143,24 @@ img {
   text-decoration: none;
 }
 
+.mail::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/convert-icon.svg);
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.phone::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/phone-icon.svg);
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -160,9 +178,19 @@ img {
 /* Hero */
 .hero {
   padding: 200px 0;
-  background-color: var(--hero-footer-color--);
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
+
+  background-color: var(--hero-footer-color--);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-hero.jpg);
+  max-width: 1600px;
+  height: 600px;
+  background-position: center;
 }
+
 .hero-title {
   max-width: 696px;
   margin-top: 0;
@@ -213,6 +241,34 @@ img {
 
 .section-list .item {
   width: 270px;
+}
+
+.section-list .item::before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--background-secondary-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna-icon.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock-icon.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram-icon.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut-icon.svg);
 }
 
 .section-list .item:not(:last-child) {
