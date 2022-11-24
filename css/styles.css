@@ -459,6 +459,13 @@ img {
   border-radius: 4px;
 }
 
+.project-card:hover .project-text {
+  transform: translateY(0%);
+  transition: transform 250ms ease;
+
+  opacity: 1;
+}
+
 .project-card {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -475,6 +482,27 @@ img {
 
 .project-card:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-text {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  transform: translateY(100%);
+  opacity: 0;
+
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
 }
 
 .card-desc {
