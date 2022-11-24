@@ -111,7 +111,6 @@ img {
 }
 
 .nav-list-link {
-  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -123,19 +122,6 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
-.current::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  background-color: var(--accent-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-}
-
 /* header contacts */
 .contacts-list {
   display: flex;
@@ -289,27 +275,6 @@ img {
   margin-right: 30px;
 }
 
-.img-list {
-  position: relative;
-}
-
-.img-desc {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
-  height: 70px;
-  padding: 27px 0;
-  bottom: 0;
-
-  color: var(--primary-white-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-/* наша команда */
 .team {
   background-color: var(--background-secondary-color);
 }
